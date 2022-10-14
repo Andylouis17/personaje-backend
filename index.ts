@@ -12,7 +12,7 @@ server.app.use(bodyParser.urlencoded({extended:true}))
 server.app.use('/',defaultRoutes);
 server.app.use('/personajes',personajeRoutes);
 
-mongoose.connect('mongodb://localhost:27017/superHeroeDb',(error)=>{
+mongoose.connect('mongodb+srv://Usher_Personajes:bendji17@cluster0.larpza5.mongodb.net/superHeroeDb',(error)=>{
     if(error){
         throw error;
     }
